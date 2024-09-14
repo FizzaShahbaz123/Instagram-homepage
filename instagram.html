@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instagram homepage</title>
+    <link rel="preconnect"
+    href="https://fonts.googleapis
+   .com">
+<link rel="preconnect" href=
+"https://fonts.gstatic.com"
+crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Montserrat:ital,
+wght@0,100..900;1,100.
+.900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;
+0,700;0,
+900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+rel="stylesheet">
+    <style>
+      body{
+        font-family:roboto,arial;
+        height:5500px;
+        padding-left:270px;
+        padding-right:100px;
+        padding-bottom:100px;
+      }
+      .sidebar{
+        position: fixed;
+      top:0;bottom:0;left:0;
+      justify-content: center;
+      align-items: center;
+      border-right:1px solid lightgray;
+      padding-bottom:30px;
+      z-index:100;
+      }
+      .logo-div{
+        width:160px;
+      }
+      .sidebar div{
+        font-size:15px;
+        font-weight:400;
+        margin:1px 10px 1px 10px;
+      }
+      .sidebar-list{
+        display:flex;
+        align-items:center;
+        padding-top:10px ;
+        padding-right:55px;
+        padding-bottom: 5px ;
+        padding-left:4px;
+        border-radius:5px;
+      }
+      .sidebar-list:hover ,
+      .more-div:hover{
+        background-color:rgba(238, 238, 238, 0.849);
+        cursor:pointer;
+      }
+      @media(max-width:700px){
+        .sidebar div{
+          font-size:0px;
+          margin-top:10px;
+        }
+        .sidebar-list{
+          padding:10px 0px 10px 5px ;
+        }
+        .logo-div{
+          width:0px;
+        }
+        body{
+          padding-left:140px;
+        }
+      }
+      .insta-logo{
+        width:100%;
+      }
+      .icons{
+        width:25px;
+      }
+      .profile{
+        width:25px;
+        border-radius:20px;
+      }
+      .more-div{
+        display:flex;
+        align-items:center;
+        cursor:pointer;
+        padding:7px 0px 7px 0px;
+        border-radius:3px;
+      }
+
+      .stories{
+        display:flex;
+        align-items:  center;
+        text-align: center;
+      }
+      .story-div{
+        margin-right:14px;
+        cursor: pointer;
+      }
+      .profile-div{
+        width:55px;
+      }
+      .profile-pic{
+        width:100%;
+        border-radius:30px;
+      }
+      .names{
+        font-size:13px;
+      }
+      .posts{
+        margin-top:40px;
+        margin-right:20px;
+        
+      }
+      .profile-div-2{
+        width:38px;
+        cursor: pointer;
+      }
+      .div-1{
+        display:flex;
+       align-items: center;
+       flex-shrink:0;
+       width:130px;
+      }
+      .names-2{
+        margin-left:10px;
+        font-size:15px;
+        font-weight: 500;
+        cursor:pointer;
+      }
+      .stats{
+        font-weight:400;
+        color:rgb(156, 154, 154);
+      }
+      .div-2{
+        width:350px;
+        cursor: pointer;
+      }
+      .post{
+        width:100%;
+      }
+      .div-3{
+        display: flex;
+        justify-content: space-between;
+        width:340px;
+      }
+      .div-3 img{
+        width:100%;
+      }
+      .like{
+        width:24px;
+        cursor: pointer;
+      }
+      .comment{
+        width:34px;
+        cursor: pointer;
+      }
+      .share{
+        width:20px;
+        margin-top:2px;
+        cursor: pointer;
+      }
+      .bookmark{
+        width:20px;
+        cursor: pointer;
+      }
+      .div-4{
+        font-size:14px;
+        font-weight:500;
+        margin-left:4px;
+      }
+      .div-5{
+        font-size:14px;
+        margin-left:7px;
+        display:flex;
+        flex-shrink:0;
+        width:350px;
+      }
+      .div-6 input{
+        font-size:14px;
+        width:330px;
+        padding:8px 8px;
+        border:none;
+        border-bottom:1px solid rgb(209, 207, 207);
+      }
+      .div-7{
+        font-size:15px;
+        color:rgb(112, 112, 112);
+        margin-left:5px;
+        width:130px;
+        cursor: pointer;
+        margin-top:4px;
+      }
+      .post-reel{
+        margin-top:14px;
+      }
+      .instagram-logo{
+        position:fixed;
+        right:300px;
+        width:70px;
+        bottom:340px;
+        
+      }
+      .instagram-logo img{
+        width:100%;
+      }
+      @media(max-width:1100px){
+        .instagram-logo{
+          width:5px;
+        }
+        .instagram-logo img{
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="sidebar">
+        <div class="logo-div">
+          <img 
+          src="instagram-logo-illustration.png"
+          class="insta-logo">
+        </div>
+        <div class="sidebar-list"
+        style="margin-bottom:5px;"
+        >
+          <div>
+            <img src="home-icon.svg"
+           class="icons">
+          </div>
+          <div>Home</div>
+        </div>
+        <div class="sidebar-list"
+        style="margin-bottom:5px;">
+          <div>
+            <img src="search-icon.svg"
+           class="icons">
+          </div>
+          <div>Search</div>
+        </div>
+        <div class="sidebar-list"
+        style="margin-bottom:5px;">
+         <div>
+          <img src="explore-icon.png" class="icons"
+          style="width:23px;"
+          >
+         </div>
+         <div>Explore</div>
+        </div>
+        <div class="sidebar-list"
+        style="margin-bottom:5px;">
+          <div>
+            <img src="reels-icon.png" 
+            class="icons" style="width:23px;">
+           </div>
+           <div>Reels</div>
+        </div>
+        <div class="sidebar-list"
+        style="margin-bottom:5px;">
+          <div>
+            <img src="messenger-icon.jpg" 
+            class="icons" style="width:23px;">
+           </div>
+           <div>Messages</div>
+        </div>
+        <div class="sidebar-list"
+        style="margin-bottom:5px;">
+          <div>
+            <img src="heart-icon.png" 
+            class="icons" style="width:23px;">
+           </div>
+           <div>Notifications</div>
+        </div>
+        <div class="sidebar-list"
+        style="margin-bottom:5px;">
+          <div>
+            <img src="create-icon.png" 
+            class="icons" style="width:23px;">
+           </div>
+           <div>Create</div>
+        </div>
+        <div class="sidebar-list">
+         <div>
+          <img src="cute-pet.png" class="profile">
+        </div>
+        <div>Profile</div>
+        </div>
+        <div class="more-div" style="margin: 48px 10px;">
+          <div>
+            <img src="icon-1.svg"
+           class="icons">
+          </div>
+          <div>More</div>
+        </div>
+      </div>
+
+      <div class="main-div">
+        <div class="stories">
+          <div class="story-div">
+            <div class="profile-div">
+              <img src="cute-pet.png" class="profile-pic">
+            </div>
+            <div class="names">My story</div>
+          </div>
+          <div class="story-div">
+            <div class="profile-div">
+              <img src="dp boy.jpg" class="profile-pic">
+            </div>
+            <div class="names">Tom</div>
+          </div>
+          <div class="story-div">
+            <div class="profile-div">
+              <img src="profile-2.jpeg" class="profile-pic">
+            </div>
+            <div class="names">Lisa</div>
+          </div>
+        </div>
+
+        <div class="instagram-logo">
+          <img src="insta-logo-transparent.webp">
+        </div>
+        <div class="posts">
+          <div class="post-reel">
+            <div class="div-1">
+              <div class="profile-div-2">
+                <img src="profile-2.jpeg" class="profile-pic">
+              </div>
+              <div class="names-2">Lisa<span class="stats">
+                &#183; 11h
+              </span></div>
+            </div>
+            <div class="div-2">
+              <img src="Iphone-gift.jpg" class="post">
+            </div>
+            <div class="div-3">
+              <div style="display: flex;">
+                <div class="like">
+                  <img src="like-icon.png">
+                </div>
+                <div class="comment">
+                  <img src="comment-icon.jpg" class="comment-pic">
+                </div>
+                <div class="share">
+                  <img src="share icon.png">
+                </div>
+              </div>
+              <div class="bookmark">
+                <img src="bookmark icon.png">
+              </div>
+            </div>
+            <div class="div-4">21 likes</div>
+            <div class="div-5">
+              <span style="font-weight: 500;">Lisa</span>
+              Birthday gift from my husband...thanks love
+            </div>
+            <div class="div-7">
+              view all comments
+            </div>
+            <div class="div-6">
+              <input type="text" placeholder="Add a comment">
+            </div>
+          </div>
+
+            <div class="post-reel">
+              <div class="div-1">
+                <div class="profile-div-2">
+                  <img src="file.png" class="profile-pic">
+                </div>
+                <div class="names-2">Oliver<span class="stats">
+                  &#183; 1h
+                </span></div>
+              </div>
+              <div class="div-2">
+                <img src="islamic post.png" class="post">
+              </div>
+              <div class="div-3">
+                <div style="display: flex;">
+                  <div class="like">
+                    <img src="like-icon.png">
+                  </div>
+                  <div class="comment">
+                    <img src="comment-icon.jpg" class="comment-pic">
+                  </div>
+                  <div class="share">
+                    <img src="share icon.png">
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="bookmark icon.png">
+                </div>
+              </div>
+              <div class="div-4">21 likes</div>
+              <div class="div-5">
+                <span style="font-weight: 500;">Oliver</span>
+                Ameen...
+              </div>
+              <div class="div-7">
+                view all comments
+              </div>
+              <div class="div-6">
+                <input type="text" placeholder="Add a comment">
+              </div>
+            </div>
+
+            <div class="post-reel">
+              <div class="div-1">
+                <div class="profile-div-2">
+                  <img src="resume pic 2.webp" class="profile-pic">
+                </div>
+                <div class="names-2">Emma<span class="stats">
+                  &#183; 1d
+                </span></div>
+              </div>
+              <div class="div-2">
+                <img src="sunset-pic.avif" class="post">
+              </div>
+              <div class="div-3">
+                <div style="display: flex;">
+                  <div class="like">
+                    <img src="like-icon.png">
+                  </div>
+                  <div class="comment">
+                    <img src="comment-icon.jpg" class="comment-pic">
+                  </div>
+                  <div class="share">
+                    <img src="share icon.png">
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="bookmark icon.png">
+                </div>
+              </div>
+              <div class="div-4">2K likes</div>
+              <div class="div-5">
+                <span style="font-weight: 500;">Emma</span>
+                Watching sunset is so mesmerizing...
+              </div>
+              <div class="div-7">
+                view all comments
+              </div>
+              <div class="div-6">
+                <input type="text" placeholder="Add a comment">
+              </div>
+            </div>
+
+            <div class="post-reel">
+              <div class="div-1">
+                <div class="profile-div-2">
+                  <img src="dp-2.jpeg" class="profile-pic">
+                </div>
+                <div class="names-2">Kelly<span class="stats">
+                  &#183; 2d
+                </span></div>
+              </div>
+              <div class="div-2">
+                <img src="cherry blosso,.jpg" class="post">
+              </div>
+              <div class="div-3">
+                <div style="display: flex;">
+                  <div class="like">
+                    <img src="like-icon.png">
+                  </div>
+                  <div class="comment">
+                    <img src="comment-icon.jpg" class="comment-pic">
+                  </div>
+                  <div class="share">
+                    <img src="share icon.png">
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="bookmark icon.png">
+                </div>
+              </div>
+              <div class="div-4">3.4k likes</div>
+              <div class="div-5">
+                <span style="font-weight: 500;">Kelly</span>
+                Came to Japan to see this...
+              </div>
+              <div class="div-7">
+                view all comments
+              </div>
+              <div class="div-6">
+                <input type="text" placeholder="Add a comment">
+              </div>
+            </div>
+
+            <div class="post-reel">
+              <div class="div-1">
+                <div class="profile-div-2">
+                  <img src="dp boy.jpg" class="profile-pic">
+                </div>
+                <div class="names-2">Tom<span class="stats">
+                  &#183; 5d
+                </span></div>
+              </div>
+              <div class="div-2">
+                <img src="moon.jpg" class="post">
+              </div>
+              <div class="div-3">
+                <div style="display: flex;">
+                  <div class="like">
+                    <img src="like-icon.png">
+                  </div>
+                  <div class="comment">
+                    <img src="comment-icon.jpg" class="comment-pic">
+                  </div>
+                  <div class="share">
+                    <img src="share icon.png">
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="bookmark icon.png">
+                </div>
+              </div>
+              <div class="div-4">19 likes</div>
+              <div class="div-5">
+                <span style="font-weight: 500;">Tom</span>
+                ...
+              </div>
+              <div class="div-7">
+                view all comments
+              </div>
+              <div class="div-6">
+                <input type="text" placeholder="Add a comment">
+              </div>
+            </div>
+
+            <div class="post-reel">
+              <div class="div-1">
+                <div class="profile-div-2">
+                  <img src="dp-2.jpeg" class="profile-pic">
+                </div>
+                <div class="names-2">Kelly<span class="stats">
+                  &#183; 1d
+                </span></div>
+              </div>
+              <div class="div-2">
+                <img src="starbucks coffee.jpg" class="post"
+                 >
+              </div>
+              <div class="div-3">
+                <div style="display: flex;">
+                  <div class="like">
+                    <img src="like-icon.png">
+                  </div>
+                  <div class="comment">
+                    <img src="comment-icon.jpg" class="comment-pic">
+                  </div>
+                  <div class="share">
+                    <img src="share icon.png">
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="bookmark icon.png">
+                </div>
+              </div>
+              <div class="div-4">21 likes</div>
+           <div class="div-5">
+              <span style="font-weight: 500;">Kelly</span>
+             Coffeeeeee...
+            </div>
+            <div class="div-7">
+              view all comments
+            </div>
+            <div class="div-6">
+              <input type="text" placeholder="Add a comment">
+             </div>
+            </div>
+
+            <div class="post-reel">
+              <div class="div-1">
+                <div class="profile-div-2">
+                  <img src="dp boy.jpg" class="profile-pic">
+                </div>
+                <div class="names-2">Tom<span class="stats">
+                  &#183; 5d
+                </span></div>
+              </div>
+              <div class="div-2">
+                <img src="plane in clouds.jpg" class="post"
+                 >
+              </div>
+              <div class="div-3">
+                <div style="display: flex;">
+                  <div class="like">
+                    <img src="like-icon.png">
+                  </div>
+                  <div class="comment">
+                    <img src="comment-icon.jpg" class="comment-pic">
+                  </div>
+                  <div class="share">
+                    <img src="share icon.png">
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="bookmark icon.png">
+                </div>
+              </div>
+              <div class="div-4">2K likes</div>
+              <div class="div-5">
+                <span style="font-weight: 500;">Tom</span>
+                Flying to London
+              </div>
+              <div class="div-7">
+                view all comments
+              </div>
+              <div class="div-6">
+                <input type="text" placeholder="Add a comment">
+              </div>
+            </div>
+
+            <div class="post-reel">
+              <div class="div-1">
+                <div class="profile-div-2">
+                  <img src="profile-pic.jpg" class="profile-pic">
+                </div>
+                <div class="names-2">Yoona<span class="stats">
+                  &#183; 5d
+                </span></div>
+              </div>
+              <div class="div-2">
+                <img src="ice cream-pic.jpg" class="post"
+                 >
+              </div>
+              <div class="div-3">
+                <div style="display: flex;">
+                  <div class="like">
+                    <img src="like-icon.png">
+                  </div>
+                  <div class="comment">
+                    <img src="comment-icon.jpg" class="comment-pic">
+                  </div>
+                  <div class="share">
+                    <img src="share icon.png">
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="bookmark icon.png">
+                </div>
+              </div>
+              <div class="div-4">1k likes</div>
+              <div class="div-5">
+                <span style="font-weight: 500;">Yoona</span>
+                Hanging out with friends..chilin' 
+              </div>
+              <div class="div-7">
+                view all comments
+              </div>
+              <div class="div-6">
+                <input type="text" placeholder="Add a comment">
+              </div>
+            </div>
+
+            <div class="post-reel">
+              <div class="div-1">
+                <div class="profile-div-2">
+                  <img src="profile-pic.jpg" class="profile-pic">
+                </div>
+                <div class="names-2">Yoona<span class="stats">
+                  &#183; 1h
+                </span></div>
+              </div>
+              <div class="div-2">
+                <img src="shopping-post.jpg" class="post"
+                 >
+              </div>
+              <div class="div-3">
+                <div style="display: flex;">
+                  <div class="like">
+                    <img src="like-icon.png">
+                  </div>
+                  <div class="comment">
+                    <img src="comment-icon.jpg" class="comment-pic">
+                  </div>
+                  <div class="share">
+                    <img src="share icon.png">
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="bookmark icon.png">
+                </div>
+              </div>
+              <div class="div-4">1.3k likes</div>
+              <div class="div-5">
+                <span style="font-weight: 500;">Yoona</span>
+                Obsessed with shopping #Gucci #LV 
+              </div>
+              <div class="div-7">
+                view all comments
+              </div>
+              <div class="div-6">
+                <input type="text" placeholder="Add a comment">
+              </div>
+            </div>
+
+            <div class="post-reel">
+              <div class="div-1">
+                <div class="profile-div-2">
+                  <img src="resume pic 2.webp" class="profile-pic">
+                </div>
+                <div class="names-2">Emma<span class="stats">
+                  &#183; 1h
+                </span></div>
+              </div>
+              <div class="div-2">
+                <img src="post-3.jpg" class="post"
+                 >
+              </div>
+              <div class="div-3">
+                <div style="display: flex;">
+                  <div class="like">
+                    <img src="like-icon.png">
+                  </div>
+                  <div class="comment">
+                    <img src="comment-icon.jpg" class="comment-pic">
+                  </div>
+                  <div class="share">
+                    <img src="share icon.png">
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="bookmark icon.png">
+                </div>
+              </div>
+              <div class="div-4">754 likes</div>
+              <div class="div-5">
+                <span style="font-weight: 500;">Emma</span>
+                Love nature.... 
+              </div>
+              <div class="div-7">
+                view all comments
+              </div>
+              <div class="div-6">
+                <input type="text" placeholder="Add a comment">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
